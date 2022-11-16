@@ -1,23 +1,39 @@
 :root {
-    --primary-color: #f6623e;
-    --secondary-color: #454545;
-    --nobel-color: #9d9d9d;
-    --black-color: #000;
-    --white-color: #fff;
+  --primary-color: #f6623e;
+  --secondary-color: #454545;
+  --nobel-color: #9d9d9d;
+  --black-color: #000;
+  --white-color: #fff;
 }
 
 html {
-    /* 100% = 16px */
-    font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: 'Jost', sans-serif;
+  /* 100% = 16px */
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Jost", sans-serif;
 }
 
 p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .grid__row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--white-color);
+} */

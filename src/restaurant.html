@@ -1,31 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant</title>
 
     <!-- Default css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    
-    <!-- Css -->
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/reponsive.css">
-    
-    <!-- Icon -->
-    <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.2.0-web/css/all.min.css">
-    
-    <!-- Font Jost -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-</head>
-<body>
-    <h1>Restaurant</h1>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-</body>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/restaurant.css" />
+    <link rel="stylesheet" href="./css/reponsive.css" />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="./assets/icon/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+
+    <!-- Font Jost -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div w3-include-html="content.html"></div>
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+    </script>
+    <script>
+      includeHTML();
+    </script> -->
+    <div class="app">
+      <header></header>
+
+      <div class="container">
+        <h1>Restaurant</h1>
+      </div>
+
+      <footer></footer>
+    </div>
+  </body>
+
+  <!-- script include header -->
+  <script>
+    fetch("./header.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("header").innerHTML = data;
+      });
+  </script>
+
+  <!-- script include footer -->
+  <script>
+    fetch("./footer.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("footer").innerHTML = data;
+      });
+  </script>
 </html>
