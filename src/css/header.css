@@ -1,3 +1,23 @@
+/* Header */
+.header {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+/* end Header */
+
+/* Logo */
+.header .logo {
+  content: "";
+  width: 200px;
+  height: auto;
+  color: #000;
+  background: #000;
+  background-color: aqua;
+}
+/* end Logo */
+
 /* Navigation  */
 .top-navigation ul li {
   list-style: none;
@@ -19,7 +39,9 @@
   padding: 1.5rem 1rem;
   display: inline-block;
   text-decoration: none;
-  color: #a1a1a1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
   width: 180px;
   text-align: center;
 }
@@ -28,3 +50,21 @@
   background: #f1f1f1;
 }
 /* end Navigation */
+
+/* Right */
+.header .right {
+  list-style: none;
+  display: flex;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 4px 16px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  background-color: var(--nobel-color);
+}
+
+/* end Right */
