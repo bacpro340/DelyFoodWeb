@@ -22,6 +22,43 @@ p {
   flex-wrap: wrap;
 }
 
+.grid-col-3 {
+  width: 33%;
+}
+
+.grid-col-2 {
+  width: 50%;
+}
+
+.grid-col-1 {
+  width: 100%;
+}
+
+.grid-row-2 {
+  height: 50%;
+}
+
+.grid-row-1 {
+  height: 100%;
+}
+
+.word {
+  display: inline-flex;
+}
+
+.gray-title {
+  color: var(--secondary-color);
+}
+
+.primary-title {
+  color: var(--primary-color);
+}
+
+.center {
+  margin: auto;
+  padding: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
