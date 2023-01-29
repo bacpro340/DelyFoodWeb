@@ -1,5 +1,13 @@
 .footer {
-  display: block;
-  background-color: aqua;
-  height: 200px;
+  display: flexbox;
+  color: var(--secondary-color);
+  z-index: 4000;
+  clear: both;
+  line-height: 1.7em;
+  padding: 30px 0 10px;
+  min-height: 90px;
+  font-size: 12px;
+  border-top: #ddd 1px solid;
+  height: 210px;
+  text-align: center;
 }
