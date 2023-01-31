@@ -1,0 +1,65 @@
+.img-form {
+  width: 60%;
+}
+
+.login-form-main {
+  display: inline-flex;
+}
+
+.form-title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.title-sign-up {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+input {
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgb(241, 237, 237);
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+
+.form-login {
+  overflow: auto;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  margin: 20px;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  box-shadow: 5px 10px 10px var(--nobel-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.btn-login {
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 12px;
+  border: 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  float: right;
+}
+
+.btn-login:hover {
+  opacity: 0.6;
+}

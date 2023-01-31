@@ -60,6 +60,7 @@
 .btn {
   font-size: 20px;
   padding: 4px 16px;
+  color: var(--black-color);
 }
 
 .btn:hover {
