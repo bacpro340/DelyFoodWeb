@@ -1,0 +1,144 @@
+html {
+  font-family: "Source Sans 3", sans-serif;
+}
+* {
+  margin: 10px auto;
+}
+.wrapper {
+  height: 800px;
+  width: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+}
+.payment-detail {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.payment-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shipping-address {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.address {
+  display: flex;
+  flex-direction: row;
+}
+.detail {
+  width: 85%;
+  height: 40%;
+}
+.header {
+  height: 10%;
+  padding: 2px 0;
+  font-size: 20px;
+  margin: 0;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.food,
+.price {
+  width: 50%;
+}
+.money {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 15px;
+}
+.quantity {
+  color: gray;
+}
+
+.total-price {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.money-element-2 {
+  margin: 0;
+}
+.wrapper-food {
+  margin: 0;
+}
+.name-1 {
+  margin: 0;
+}
+.food-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+.payment-methods {
+  display: flex;
+  /* align-items: center; */
+  gap: 30px;
+  /* margin-bottom: 40px; */
+}
+
+.payment-method .method {
+  border: 1px solid hsl(0, 0%, 64%);
+  background-color: white;
+  border-radius: 5px;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 30px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.payment-method .selected {
+  border-color: #f44336;
+}
+
+.payment-method .method ion-icon {
+  font-size: 20px;
+}
+
+.payment-method .method .checkmark {
+  /* margin-left: auto; */
+  color: white;
+}
+
+.payment-method .method .fill {
+  color: #f44336;
+}
+.button {
+  border: 1px solid hsl(0, 0%, 64%);
+
+  background-color: white;
+  border-color: #f44336;
+  color: #f44336;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.button:hover {
+  color: white;
+  background-color: #f44336;
+}
+.pay {
+  display: flex;
+  justify-content: end;
+  margin-right: 5px;
+}
