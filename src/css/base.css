@@ -4,6 +4,7 @@
   --nobel-color: #9d9d9d;
   --black-color: #000;
   --white-color: #fff;
+  --label-color: #f1f1f1;
 }
 
 html {
@@ -62,6 +63,14 @@ p {
 
 .primary-title {
   color: var(--primary-color);
+}
+
+.fill-primary-color {
+  background-color: var(--primary-color);
+}
+
+.fill-nobel-color {
+  background-color: var(--nobel-color);
 }
 
 .center {

@@ -31,6 +31,17 @@ body {
   box-shadow: 5px 10px 10px var(--nobel-color);
 }
 
+.form-detail {
+  overflow: hidden;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  margin: 20px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  box-shadow: 5px 10px 10px var(--nobel-color);
+}
+
 input,
 select {
   display: block;
@@ -50,10 +61,7 @@ select {
   text-transform: uppercase;
 
   border: 0;
-  padding: 10px 16px;
-  margin-top: 10px;
-  margin-left: -5px;
-  margin-right: 20%;
+  padding: 10px 24px;
   border-radius: 5px;
   background-color: var(--primary-color);
   float: right;
@@ -98,9 +106,114 @@ select {
   border-radius: 4px;
 }
 
+.border-16 {
+  border-radius: 16px;
+}
+
 .grid-col-2_20 {
   width: 20%;
 }
 .grid-col-2_80 {
   width: 80%;
+}
+
+.address-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.list-number {
+  width: 50%;
+}
+.previous-next {
+  width: 50%;
+}
+
+.list-number,
+.previous-next {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-save-address {
+  width: 20%;
+  align-self: flex-end;
+}
+
+.btn-add-address {
+  width: 40%;
+  align-self: flex-start;
+}
+
+.name-and-phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--nobel-color);
+}
+
+.item-address {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.container-address {
+  padding: 4% 2%;
+  display: inline-block;
+  background-color: var(--label-color);
+  border-radius: 4px;
+  width: 100%;
+}
+
+i {
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+i:hover {
+  color: var(--nobel-color);
+  cursor: pointer;
+}
+
+.icon-edit,
+.icon-delete {
+  float: right;
+}
+
+.name-address {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--nobel-color);
+}
+
+.payment-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.title-payment {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 20px;
+  color: var(--primary-color);
+  padding: 12px 0;
+}
+
+.detail__payment {
+  display: flex;
+  flex-direction: column;
 }
