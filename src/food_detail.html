@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Food Detail</title>
+  </head>
+  <style>
+    p{
+      font-family: "Jost", sans-serif;
+      margin: 5px;
+    }
+    #container {
+      width: 1000px;
+      height: 2618px;
+      left: -2px;
+      top: 165px;
+
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
+
+  
+    #right {
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      
+    }
+
+    #food-info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+      
+      
+    }
+    button{
+      font-family: "Jost", sans-serif;
+      width: 150px;
+      height: 35px;
+      background-color: rgb(246, 98, 62);
+      color: #ffffff;
+      border: 0;
+      border-radius: 5px;
+    }
+    #add-button {
+      font-family: "Jost", sans-serif;
+      width: 150px;
+      height: 35px;
+      background-color: rgb(246, 98, 62);
+      color: #ffffff;
+      border: 0;
+      border-radius: 5px;
+      
+    }
+    button:active {
+      transform: scale(0.95);
+    }
+    #Food_Name {
+      font-family: "Jost", sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    #Address {
+      font-family: "Jost", sans-serif;
+      font-size: 24px;
+      color: rgba(130, 129, 129, 1);
+      padding: 0;
+      margin: 0;
+
+    }
+    #Restaurant {
+      font-family: "Jost", sans-serif;
+      font-weight: 18px;
+      font-size: 20px;
+    }
+    #Price {
+      font-family: "Jost", sans-serif;
+      font-size: 20px;
+      color: rgba(130, 129, 129, 1);
+    }
+    #Category {
+      font-family: "Jost", sans-serif;
+      color: rgba(130, 129, 129, 1);
+    }
+    #Hours {
+      font-family: "Jost", sans-serif;
+      color: rgba(130, 129, 129, 1);
+    }
+    #Rattings {
+      font-family: "Jost", sans-serif;
+      font-weight: 500;
+    }
+    .Quantity_bt {
+      width: 35px;
+      height: 35px;
+      margin-bottom: 10px;
+    }
+    #comment-section{
+      
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #avatar{
+      border-radius: 50px;
+      width: 80px;
+      height: 80px;
+      
+    }
+    /* Comment section */
+    #comment-container{
+      background-color: white;
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      margin-left: 140px;
+    }
+    #Comment-area{
+      display: flex;
+      flex-direction: row;
+    }
+    #comments{
+      background-color: rgb(255, 255, 255);
+      margin: 5px;
+      border: 0;
+      font-family: "Jost", sans-serif;
+      font-size: 20px;
+      text-align:left;
+      
+      overflow: hidden;
+      height: 100px;
+    }
+    #information{
+      
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      height: auto;
+      margin-left: 40px;
+      
+      
+    }
+    #sub-infor{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    #page-ShowNumber{
+      background-color: grey;
+    }
+    #rattings-star{
+      width: 23px;
+      
+    }
+  </style>
+  <body>
+    <div id="container">
+      
+        <div id="food-info">
+          <div id="left">
+            <img src=".\Imagine\food.jpg" alt="Image"  />
+          </div>
+          <div id="right">
+            <h2 id="Food_Name">Hamberger</h2>
+          <p id="Address">Thủ Đức, TP.HCM</p>
+          <p id="Restaurant">Restaurant</p>
+          
+          <p id="Price">100.000đ</p>
+          <p id="Category">Loại: Combo Bánh + Khoai</p>
+          <p id="Hours">
+            Mở cửa:
+            <span id="OpenHours" style="color: rgb(77, 164, 243)">8:00 AM - 10:00 PM</span>
+          </p>
+          
+          <div id="Quantity">
+            <button id="minus" style="width: 35px;">-</button>
+            
+            <button id="number" style="width: 35px;">0</button>
+            <button id="plus" style="width: 35px;">+</button>
+          </div>
+          <div id="rating" style="display: flex;margin: 5px;margin-left: 0;">
+            <img id="rattings-star" src="./Imagine/star.png">
+            <img id="rattings-star" src="./Imagine/star.png">
+            <img id="rattings-star" src="./Imagine/star.png">
+            <img id="rattings-star" src="./Imagine/star.png">
+            <img id="rattings-star" src="./Imagine/star.png">
+          </div>
+          
+          <p id="Rattings">100.000 ratings</p>
+          <button id="add-button" style="width: 115px;">Thêm</button>
+          </div>
+          
+        </div>
+        
+        <!-- Comment-Scetion -->
+        <hr size="2" width="80%" color="rgba(218, 218, 218, 1)"> 
+        <div id="comment-section">
+
+          <!-- #Area to write comments -->
+          <div id="Comment-area" style="margin:20px ;">
+            <img id="avatar" src="./Imagine/avatar.jpg">
+            <textarea id="comments" placeholder="Your Comment Here" style="background-color: rgba(241, 241, 241, 1);width: 700px;margin-left: 30px;"></textarea>
+            <button style="margin: 5px;">Comment</button>
+          </div>
+            
+           <div id="comment-container">
+              <img id="avatar" src="./Imagine/avatar.jpg">
+              <div id="information">
+                <textarea name="comments" id="comments">
+                  This restaurant has the best Hamberger I've ever tasted, the presentation is beautiful and the flavors are amazing.
+                </textarea>
+                <div id="sub-infor">
+                    <p style="padding-right: 20px;">5/11/2022</p>
+                    <p style="padding-right: 20px;">100 Likes</p>
+                    <p>3 Reply</p>
+                </div>
+
+              </div>
+              
+           </div>
+          <!-- Page-number -->
+          
+          </div>
+          <div id="page-number" style="display: flex; justify-content: center;width: 100%;">
+            <button id="previous" style="width: 60px;margin: 10px;">Previous</button>
+            <button id="page-ShowNumber" style="width: 35px;margin: 10px;background-color: rgb(246, 98, 62);">1</button>
+            <button id="page-ShowNumber" style="width: 35px;margin: 10px;">2</button>
+            <button id="page-ShowNumber" style="width: 35px;margin: 10px;">3</button>
+            <button id="page-ShowNumber" style="width: 35px;margin: 10px;">...</button>
+            <button id="page-ShowNumber" style="width: 35px;margin: 10px;">9</button>
+            <button id="page-ShowNumber" style="width: 35px;margin: 10px;">10</button>
+            <button id="next" style="width: 60px;margin: 10px;">Next</button>
+          </div>
+          
+         
+        </div>
+        
+      
+    </div>
+  </body>
+</html>
+
+
+<script>
+  // Tự động kéo dãn ô comment
+  // let textarea = document.getElementById("auto-grow");
+  // textarea.addEventListener("input", function() {
+  //   this.style.height = "";
+  //   this.style.height = this.scrollHeight + "px";
+  // });
+
+
+  let originalDiv = document.getElementById("comment-container");
+  let clonedDiv = originalDiv.cloneNode(true);
+  let container = document.getElementById("comment-section");
+  for (let i = 0; i < 5; i++) {
+    let clonedDiv = originalDiv.cloneNode(true);
+    container.appendChild(clonedDiv);
+  }
+
+  
+
+  // Chỉnh số lượng món ăn
+  let numberButton = document.getElementById("number");
+  let plus = document.getElementById("plus");
+  let minus = document.getElementById("minus");
+  let number = 0;
+
+  plus.addEventListener("click", function() {
+    number++;
+    numberButton.innerHTML = number;
+  });
+
+  minus.addEventListener("click", function() {
+    if (number > 0) {
+      number--;
+    } else {
+      number = 0;
+    }
+    numberButton.innerHTML = number;
+  });
+  
+</script>
