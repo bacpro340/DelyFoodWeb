@@ -1,0 +1,54 @@
+body {
+  overflow-x: hidden;
+}
+
+.information {
+  display: inline-flex;
+}
+
+.container-detail {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-span-row-2 {
+  height: 5rem;
+}
+
+.basic-info-fill {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+}
+
+.img-ava {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+}
+
+.tab-click-color {
+  background-color: var(--primary-color);
+}
+
+.menu-button {
+  padding: 0 20px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 4px 8px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.grid-col-2_20 {
+  width: 20%;
+}
+.grid-col-2_80 {
+  width: 80%;
+}

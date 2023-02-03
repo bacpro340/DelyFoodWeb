@@ -23,23 +23,33 @@ p {
 }
 
 .grid-col-3 {
+  flex-wrap: wrap;
   width: 33%;
 }
 
 .grid-col-2 {
+  flex-wrap: wrap;
   width: 50%;
 }
 
 .grid-col-1 {
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .grid-row-2 {
+  flex-wrap: wrap;
   height: 50%;
 }
 
 .grid-row-1 {
+  flex-wrap: wrap;
   height: 100%;
+}
+
+.grid-row-4 {
+  flex-wrap: wrap;
+  height: 25%;
 }
 
 .word {

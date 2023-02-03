@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Default css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/basic_info.css" />
+    <link rel="stylesheet" href="./css/reponsive.css" />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="./assets/icon/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+
+    <!-- Font Jost -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header></header>
+      <div class="container">
+        <div class="information">
+          <div class="grid-col-2_20">
+            <div class="avatar-customer">
+              <img src="./assets/image/customer.jpg" alt="" class="img-ava" />
+            </div>
+            <div class="menu-button">
+              <button
+                class="tablink btn"
+                onclick="openinfo(event, 'basic-info')"
+              >
+                Thông tin cá nhân
+              </button>
+              <button class="tablink btn" onclick="openinfo(event, 'address')">
+                Địa chỉ
+              </button>
+              <button class="tablink btn" onclick="openinfo(event, 'payment')">
+                Thông tin thanh toán
+              </button>
+              <button
+                class="tablink btn"
+                onclick="openinfo(event, 'change-pass')"
+              >
+                Đổi mật khẩu
+              </button>
+              <button class="tablink btn" onclick="openinfo(event, 'history')">
+                Lịch sử giao dịch
+              </button>
+              <button
+                class="tablink btn"
+                onclick="openinfo(event, 'favourite')"
+              >
+                Yêu thích
+              </button>
+              <button
+                class="tablink btn"
+                onclick="openinfo(event, 'notification')"
+              >
+                Thông báo
+              </button>
+            </div>
+          </div>
+
+          <div class="grid-col-2_80">
+            <div class="detail">
+              <div
+                id="basic-info"
+                class="info container-detail"
+                style="display: none"
+              >
+                <div class="grid-col-2">
+                  <div>
+                    <div class="basic-info-title">Họ tên</div>
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Nhập họ tên"
+                        class="basic-info-fill"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="basic-info-title">Giới tính</div>
+                    <div class="custom-select basic-info-fill">
+                      <select>
+                        <option value="1">Nam</option>
+                        <option value="2">Nữ</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="basic-info-title">Ngày sinh</div>
+
+                    <input
+                      type="date"
+                      placeholder="Nhập ngày sinh"
+                      class="basic-info-fill"
+                    />
+                  </div>
+                </div>
+                <div class="grid-col-2">
+                  <div>
+                    <div class="basic-info-title">Số điện thoại</div>
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Nhập số điện thoại"
+                        class="basic-info-fill"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="basic-info-title">Địa chỉ</div>
+                    <input
+                      type="text"
+                      placeholder="Nhập địa chỉ"
+                      class="basic-info-fill grid-span-row-2"
+                    />
+                  </div>
+
+                  <div>
+                    <button class="btn-save">Lưu</button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="address" class="info" style="display: none">Dia chi</div>
+              <div id="payment" class="info" style="display: none">
+                Thong tin thong tin thanh toan
+              </div>
+              <div id="change-pass" class="info" style="display: none">
+                Doi mat khau
+              </div>
+              <div id="history" class="info" style="display: none">
+                Lich su giao dich
+              </div>
+              <div id="favourite" class="info" style="display: none">
+                Yeu thich
+              </div>
+              <div id="notification" class="info" style="display: none">
+                Thong bao khuyen mai
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+
+    <script>
+      function openinfo(evt, infoName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("info");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " tab-click-color",
+            ""
+          );
+        }
+        document.getElementById(infoName).style.display = "flex";
+        evt.currentTarget.className += " tab-click-color";
+      }
+    </script>
+
+    <!-- script include header -->
+    <script>
+      fetch("./header.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.querySelector("header").innerHTML = data;
+        });
+    </script>
+
+    <!-- script include footer -->
+    <script>
+      fetch("./footer.html")
+        .then((response) => {
+          return response.text();
+        })
+        .then((data) => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

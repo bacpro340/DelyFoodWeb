@@ -9,13 +9,23 @@
 /* end Header */
 
 /* Logo */
-.header .logo {
-  content: "";
-  width: 200px;
+.logo {
+  display: inline-flex;
+  padding: 10px 20px;
+}
+
+.name-logo {
+  text-align: center;
+  padding: 0 10px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  color: var(--primary-color);
+}
+
+.img-logo {
+  width: 40px;
   height: auto;
-  color: #000;
-  background: #000;
-  background-color: aqua;
 }
 /* end Logo */
 
