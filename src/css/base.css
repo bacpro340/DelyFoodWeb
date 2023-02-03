@@ -10,7 +10,7 @@ html {
   /* 100% = 16px */
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 p {
@@ -76,11 +76,11 @@ p {
   transition: all 0.3s ease;
 }
 
-/* body {
+body {
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   background-color: var(--white-color);
-} */
+}
