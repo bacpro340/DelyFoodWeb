@@ -6,17 +6,69 @@ body {
   display: inline-flex;
 }
 
+.avatar-customer {
+  text-align: center;
+  padding: 20px 16px;
+}
+
+.basic-info-title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
 .container-detail {
   display: flex;
   flex-direction: row;
+  overflow: auto;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  margin: 20px;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  box-shadow: 5px 10px 10px var(--nobel-color);
+}
+
+input,
+select {
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgb(241, 237, 237);
+  width: 50%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+
+.btn-save {
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 16px;
+  text-transform: uppercase;
+
+  border: 0;
+  padding: 10px 16px;
+  margin-top: 10px;
+  margin-left: -5px;
+  margin-right: 20%;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  float: right;
+}
+
+.btn-save:hover {
+  opacity: 0.6;
 }
 
 .grid-span-row-2 {
-  height: 5rem;
+  height: 150px;
 }
 
 .basic-info-fill {
-  width: 100%;
+  width: 80%;
 }
 
 .title {
