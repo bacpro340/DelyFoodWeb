@@ -5,6 +5,7 @@
 .introduce {
   width: 100%;
   display: inline-flex;
+  padding: 40px 60px;
 }
 
 .image-intro {
@@ -55,6 +56,7 @@
 .benefit {
   width: 100%;
   text-align: center;
+  padding: 40px 60px;
 }
 
 .benefit-title {
@@ -199,4 +201,9 @@
 
 .food-and-restaurant {
   overflow: auto;
+  padding: 40px 60px;
+}
+
+.review {
+  padding: 40px 60px;
 }
