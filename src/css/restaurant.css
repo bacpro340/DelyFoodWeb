@@ -52,7 +52,7 @@
   padding: 60px 0 0 0;
 }
 .category-top {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .category-top p {
   font-family: var(--main-text-font);
