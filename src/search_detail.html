@@ -11,6 +11,19 @@
       rel="stylesheet"
     />
     <title>Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/base.css" />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="./assets/icon/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
   </head>
   <style>
     p {
@@ -120,86 +133,112 @@
     }
   </style>
   <body>
-    <div class="container">
-      <div class="sidebar">
-        <button class="sidebar-button">
-          Nhà Hàng <span class="arrow">&#x25BC;</span>
-        </button>
-        <div class="sidebar-subitems hidden">
-          <p>Tên nhà hàng 1</p>
-          <p>Tên nhà hàng 2</p>
-          <p>Tên nhà hàng 3</p>
-        </div>
-        <button class="sidebar-button">
-          Địa Điểm <span class="arrow">&#x25BC;</span>
-        </button>
-        <div class="sidebar-subitems hidden">
-          <p>Tên Địa Điểm 1</p>
-          <p>Tên Địa Điểm 2</p>
-          <p>Tên Địa Điểm 3</p>
-        </div>
-        <button class="sidebar-button">
-          Loại Món <span class="arrow">&#x25BC;</span>
-        </button>
-        <div class="sidebar-subitems hidden">
-          <p>Tên Loại Món 1</p>
-          <p>Tên Loại Món 2</p>
-          <p>Tên Loại Món 3</p>
-        </div>
-        <button class="sidebar-button">
-          Giá Khoảng <span class="arrow">&#x25BC;</span>
-        </button>
-        <div class="sidebar-subitems hidden">
-          <p>Subitem 1</p>
-          <p>Subitem 2</p>
-          <p>Subitem 3</p>
-        </div>
-      </div>
-      <!-- Thong tin mon an -->
-      <div class="grid">
-        <div class="grid-item">
-          <div class="img-container">
-            <img src="./Imagine/menu.jpg" alt="" />
+    <div class="app">
+      <header></header>
+      <div class="container">
+        <div class="sidebar">
+          <button class="sidebar-button">
+            Nhà Hàng <span class="arrow">&#x25BC;</span>
+          </button>
+          <div class="sidebar-subitems hidden">
+            <p>Tên nhà hàng 1</p>
+            <p>Tên nhà hàng 2</p>
+            <p>Tên nhà hàng 3</p>
           </div>
-          <div
-            class="sub-infor"
-            style="
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-start;
-            "
-          >
-            <p style="text-align: start; font-size: 32px; margin: 0">
-              Hamberger
-            </p>
-            <p style="text-align: start; font-size: 16px; margin: 0">
-              Thủ Đức, TP.HCM
-            </p>
+          <button class="sidebar-button">
+            Địa Điểm <span class="arrow">&#x25BC;</span>
+          </button>
+          <div class="sidebar-subitems hidden">
+            <p>Tên Địa Điểm 1</p>
+            <p>Tên Địa Điểm 2</p>
+            <p>Tên Địa Điểm 3</p>
           </div>
-          <div class="restaurant">
-            <p style="text-align: end; margin: 0">Nhà Hàng</p>
+          <button class="sidebar-button">
+            Loại Món <span class="arrow">&#x25BC;</span>
+          </button>
+          <div class="sidebar-subitems hidden">
+            <p>Tên Loại Món 1</p>
+            <p>Tên Loại Món 2</p>
+            <p>Tên Loại Món 3</p>
           </div>
-          <div class="price">
-            <p style="margin: 0; text-align: start">100.000đ</p>
+          <button class="sidebar-button">
+            Giá Khoảng <span class="arrow">&#x25BC;</span>
+          </button>
+          <div class="sidebar-subitems hidden">
+            <p>Subitem 1</p>
+            <p>Subitem 2</p>
+            <p>Subitem 3</p>
+          </div>
+        </div>
+        <!-- Thong tin mon an -->
+        <div class="grid">
+          <div class="grid-item">
+            <div class="img-container">
+              <img src="./Imagine/menu.jpg" alt="" />
+            </div>
+            <div
+              class="sub-infor"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+              "
+            >
+              <p style="text-align: start; font-size: 32px; margin: 0">
+                Hamberger
+              </p>
+              <p style="text-align: start; font-size: 16px; margin: 0">
+                Thủ Đức, TP.HCM
+              </p>
+            </div>
+            <div class="restaurant">
+              <p style="text-align: end; margin: 0">Nhà Hàng</p>
+            </div>
+            <div class="price">
+              <p style="margin: 0; text-align: start">100.000đ</p>
 
-            <div class="flex-container">
-              <p class="image-text" style="margin: 0">1234</p>
-              <img
-                src="./Imagine/icons8-comments-24.png"
-                style="width: 24px; height: 24px; margin-left: 5px"
-              />
-              <p class="image-text" style="margin: 0">1234</p>
-              <img
-                src="./Imagine/icons8-millenium-eye-24.png"
-                style="width: 24px; height: 24px; margin-left: 5px"
-              />
+              <div class="flex-container">
+                <p class="image-text" style="margin: 0">1234</p>
+                <img
+                  src="./Imagine/icons8-comments-24.png"
+                  style="width: 24px; height: 24px; margin-left: 5px"
+                />
+                <p class="image-text" style="margin: 0">1234</p>
+                <img
+                  src="./Imagine/icons8-millenium-eye-24.png"
+                  style="width: 24px; height: 24px; margin-left: 5px"
+                />
+              </div>
             </div>
           </div>
+          <!-- Repeat the above div for the rest of the grid items -->
         </div>
-        <!-- Repeat the above div for the rest of the grid items -->
       </div>
+      <footer></footer>
     </div>
   </body>
+
+  <!-- script include header -->
+  <script>
+    fetch("./header.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("header").innerHTML = data;
+      });
+  </script>
+
+  <!-- script include footer -->
+  <script>
+    fetch("./footer.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("footer").innerHTML = data;
+      });
+  </script>
   <script>
     const buttons = document.querySelectorAll(".sidebar-button");
 
