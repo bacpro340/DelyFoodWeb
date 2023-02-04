@@ -4,14 +4,13 @@
   --nobel-color: #9d9d9d;
   --black-color: #000;
   --white-color: #fff;
-  --label-color: #f1f1f1;
 }
 
 html {
   /* 100% = 16px */
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 p {
@@ -21,61 +20,6 @@ p {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.grid-col-3 {
-  flex-wrap: wrap;
-  width: 33%;
-}
-
-.grid-col-2 {
-  flex-wrap: wrap;
-  width: 50%;
-}
-
-.grid-col-1 {
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.grid-row-2 {
-  flex-wrap: wrap;
-  height: 50%;
-}
-
-.grid-row-1 {
-  flex-wrap: wrap;
-  height: 100%;
-}
-
-.grid-row-4 {
-  flex-wrap: wrap;
-  height: 25%;
-}
-
-.word {
-  display: inline-flex;
-}
-
-.gray-title {
-  color: var(--secondary-color);
-}
-
-.primary-title {
-  color: var(--primary-color);
-}
-
-.fill-primary-color {
-  background-color: var(--primary-color);
-}
-
-.fill-nobel-color {
-  background-color: var(--nobel-color);
-}
-
-.center {
-  margin: auto;
-  padding: 10px;
 }
 
 * {
