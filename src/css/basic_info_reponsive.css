@@ -1,0 +1,29 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 567px) {
+  .grid-col-2_20 {
+    width: 100%;
+  }
+  .grid-col-2_80 {
+    width: 100%;
+  }
+  .tablink {
+    width: fit-content;
+    font-size: 8px;
+  }
+  .menu-button {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+  }
+}
