@@ -9,8 +9,8 @@
 }
 
 .image-intro {
-  width: 500px;
-  margin-left: 100px;
+  width: 100%;
+  padding: 10px 40px;
   text-align: center;
 }
 
@@ -176,7 +176,7 @@
 }
 
 .img-rect {
-  height: 300px;
+  width: 60%;
 }
 
 .rect-title {

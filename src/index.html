@@ -15,7 +15,7 @@
     <!-- Css -->
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/reponsive.css" />
+    <link rel="stylesheet" href="./css/home_reponsive.css" />
 
     <!-- Icon -->
     <link
@@ -136,10 +136,9 @@
             <div class="word primary-title">thực đơn</div>
             <div class="word secondary-title">tốt</div>
           </div>
-
-          <a href="explore.html"
-            ><img src="./assets/image/food.jpg" alt="" class="img-rect" />
-          </a>
+          <a href="explore.html">
+            <img src="./assets/image/food.jpg" alt="" class="img-rect"
+          /></a>
 
           <div class="rect-detail">
             Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
@@ -271,23 +270,23 @@
 
   <!-- script include header -->
   <script>
-    fetch('./header.html')
+    fetch("./header.html")
       .then((response) => {
         return response.text();
       })
       .then((data) => {
-        document.querySelector('header').innerHTML = data;
+        document.querySelector("header").innerHTML = data;
       });
   </script>
 
   <!-- script include footer -->
   <script>
-    fetch('./footer.html')
+    fetch("./footer.html")
       .then((response) => {
         return response.text();
       })
       .then((data) => {
-        document.querySelector('footer').innerHTML = data;
+        document.querySelector("footer").innerHTML = data;
       });
   </script>
 </html>
