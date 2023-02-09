@@ -3,7 +3,8 @@ body {
 }
 
 .information {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
 }
 
 .avatar-customer {
@@ -27,7 +28,7 @@ body {
   margin: 20px;
   top: 50%;
   left: 50%;
-  width: 1000px;
+  width: 90%;
   box-shadow: 5px 10px 10px var(--nobel-color);
 }
 
@@ -118,7 +119,7 @@ select {
 }
 
 .address-container {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 
@@ -196,7 +197,7 @@ i:hover {
 }
 
 .payment-container {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 
@@ -218,30 +219,25 @@ i:hover {
   flex-direction: column;
 }
 
-.change-pass-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .change-pass-container .basic-info-fill {
   width: 30%;
 }
 
 .change-pass-container {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .history-container {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .filter-history .btn {
-  width: 150px;
+  width: fit-content;
 }
 
 .filter-history {
