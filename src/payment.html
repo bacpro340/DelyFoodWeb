@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="pay">
-          <button class="button button3">Thanh toán</button>
+          <button class="button button3" id="redirect-button">Thanh toán</button>
         </div>
       </div>
     </div>
@@ -144,7 +144,11 @@ elements.forEach(function(element) {
     this.classList.toggle("selected");
   });
 });
+let redirectButton = document.querySelector("#redirect-button");
 
+      redirectButton.addEventListener("click", function () {
+        window.location.href = "progress.html";
+      });
     </script>
   </body>
   

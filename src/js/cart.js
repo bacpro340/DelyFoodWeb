@@ -9,6 +9,19 @@ const subtotalElem = document.querySelector("#subtotal");
 const taxElem = document.querySelector("#tax");
 const totalElem = document.querySelector("#total");
 
+const deleteButton1 = document.querySelector("#delete-button-1");
+deleteButton1.addEventListener("click", function () {
+  quantityElem[0].textContent = 0;
+  totalCalc();
+  this.closest(".product-card").remove();
+});
+const deleteButton2 = document.querySelector("#delete-button-2");
+deleteButton2.addEventListener("click", function () {
+  quantityElem[1].textContent = 0;
+  totalCalc();
+  this.closest(".product-card").remove();
+});
+
 for (let i = 0; i < incrementBtn.length; i++) {
   incrementBtn[i].addEventListener("click", function () {
     let increment = Number(this.previousElementSibling.textContent);
@@ -23,7 +36,7 @@ for (let i = 0; i < incrementBtn.length; i++) {
   decrementBtn[i].addEventListener("click", function () {
     let decrement = Number(this.nextElementSibling.textContent);
 
-    decrement <= 1 ? 1 : decrement--;
+    decrement <= 0 ? 0 : decrement--;
 
     this.nextElementSibling.textContent = decrement;
 
