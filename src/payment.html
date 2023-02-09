@@ -1,106 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thông tin thanh toán</title>
-    <link rel="stylesheet" href="./css/payment.css"></link>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/payment.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="info">
-        <p class="payment-detail"><strong>Tiến hành thanh toán</strong></p>
-        <div class="shipping-address" style="margin: 0 auto">
-          <div class="address">
-            <div style="width: 20%"><strong>Giao tại</strong></div>
-            <div style="width: 85%">
-              Ký túc xá khu B Đại học Quốc Gia TP.HCM - Tô Vĩnh Diện, Đông Hòa,
-              Dĩ An, Bình Dương
+    <div class="app">
+      <header></header>
+      <div class="wrapper">
+        <div class="info">
+          <p class="payment-detail"><strong>Tiến hành thanh toán</strong></p>
+          <div class="shipping-address" style="margin: 0 auto">
+            <div class="address">
+              <div style="width: 20%"><strong>Giao tại</strong></div>
+              <div style="width: 85%">
+                Ký túc xá khu B Đại học Quốc Gia TP.HCM - Tô Vĩnh Diện, Đông
+                Hòa, Dĩ An, Bình Dương
+              </div>
+            </div>
+            <div>
+              <strong style="top: -15px; position: relative"
+                >Thời gian giao hàng dự kiến 30 phút</strong
+              >
             </div>
           </div>
-          <div>
-            <strong style="top: -15px; position: relative"
-              >Thời gian giao hàng dự kiến 30 phút</strong
-            >
-          </div>
         </div>
-      </div>
-      <hr style="width: 85%" />
-      <div class="detail">
-        <div class="header">
-          <p class="order-summary"><strong>Chi tiết hóa đơn</strong></p>
-        </div>
-        <div class="content">
-          <div class="food">
-            <div class="name"><strong>Mì xào bò</strong></div>
-            <div class="quantity">Số lượng: 1</div>
+        <hr style="width: 85%" />
+        <div class="detail">
+          <div class="header">
+            <p class="order-summary"><strong>Chi tiết hóa đơn</strong></p>
           </div>
-          <div class="price">
-            <div class="money">40k</div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="food">
-            <div class="name"><strong>Cơm gà xối mỡ</strong></div>
-            <div class="quantity">Số lượng: 2</div>
-          </div>
-          <div class="price">
-            <div class="money">70k</div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="food-element">
-            <div class="wrapper-food">
-              <div class="name-1"><strong>Thành tiền</strong></div>
-              <div class="name-2"><strong>Phí ship</strong></div>
-              <div class="name-3"><strong>Tổng cộng</strong></div>
+          <div class="content">
+            <div class="food">
+              <div class="name"><strong>Mì xào bò</strong></div>
+              <div class="quantity">Số lượng: 1</div>
+            </div>
+            <div class="price">
+              <div class="money">40k</div>
             </div>
           </div>
-          <div class="total-price">
-            <div class="money-element-1">110k</div>
-            <div class="money-element-2">25k</div>
-            <div class="money-element-3">135k</div>
+          <div class="content">
+            <div class="food">
+              <div class="name"><strong>Cơm gà xối mỡ</strong></div>
+              <div class="quantity">Số lượng: 2</div>
+            </div>
+            <div class="price">
+              <div class="money">70k</div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="food-element">
+              <div class="wrapper-food">
+                <div class="name-1"><strong>Thành tiền</strong></div>
+                <div class="name-2"><strong>Phí ship</strong></div>
+                <div class="name-3"><strong>Tổng cộng</strong></div>
+              </div>
+            </div>
+            <div class="total-price">
+              <div class="money-element-1">110k</div>
+              <div class="money-element-2">25k</div>
+              <div class="money-element-3">135k</div>
+            </div>
           </div>
         </div>
-      </div>
-      <hr style="width: 85%" />
-      <div class="detail payment-method">
-        <p class="order-summary title"><strong>Hình thức thanh toán</strong></p>
-        <div class="methods">
-          <div class="payment-methods">
-            <button class="method ">
-              <ion-icon name="card"></ion-icon>
+        <hr style="width: 85%" />
+        <div class="detail payment-method">
+          <p class="order-summary title">
+            <strong>Hình thức thanh toán</strong>
+          </p>
+          <div class="methods">
+            <div class="payment-methods">
+              <button class="method">
+                <ion-icon name="card"></ion-icon>
 
-              <span style="width: 70%">Thanh toán khi giao hàng</span>
+                <span style="width: 70%">Thanh toán khi giao hàng</span>
 
-              <!-- <ion-icon
+                <!-- <ion-icon
                 class="checkmark"
                 name="checkmark-circle"
               ></ion-icon> -->
-            </button>
+              </button>
 
-            <button class="method">
-              <ion-icon name="logo-paypal"></ion-icon>
+              <button class="method">
+                <ion-icon name="logo-paypal"></ion-icon>
 
-              <span style="width: 70%">Chuyển khoản </span>
+                <span style="width: 70%">Chuyển khoản </span>
 
-              <!-- <ion-icon
+                <!-- <ion-icon
                 class="checkmark"
                 name="checkmark-circle-outline"
               ></ion-icon> -->
+              </button>
+            </div>
+          </div>
+          <div class="pay">
+            <button class="button button3" id="redirect-button">
+              Thanh toán
             </button>
           </div>
         </div>
-        <div class="pay">
-          <button class="button button3" id="redirect-button">Thanh toán</button>
-        </div>
       </div>
+      <footer></footer>
     </div>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -110,46 +120,65 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script>
-      
-const elements = document.querySelectorAll(".method");
+      const elements = document.querySelectorAll(".method");
 
-elements.forEach(function(element) {
-  element.addEventListener("click", function() {
-    // Remove the child element and "selected" class from all other elements
-    elements.forEach(function(otherElement) {
-      if (otherElement !== element) {
-        const newChild = otherElement.querySelector(".checkmark");
-        if (newChild) {
-          otherElement.removeChild(newChild);
-        }
-        otherElement.classList.remove("selected");
-      }
-    });
-    
-    // Check if the clicked element has a child with the class "new-child"
-    const newChild = this.querySelector(".checkmark");
-    if (newChild) {
-      // If a child with the class "new-child" is found, remove it
-      this.removeChild(newChild);
-    } else {
-      // If no child with the class "new-child" is found, create a new child element
-      const newChild = document.createElement("ion-icon");
-      newChild.name = "checkmark-circle";
-      newChild.classList.add("checkmark");
-      newChild.classList.add("fill")
-      this.appendChild(newChild);
-    }
-    
-    // Toggle the "selected" class on the clicked element
-    this.classList.toggle("selected");
-  });
-});
-let redirectButton = document.querySelector("#redirect-button");
+      elements.forEach(function (element) {
+        element.addEventListener("click", function () {
+          // Remove the child element and "selected" class from all other elements
+          elements.forEach(function (otherElement) {
+            if (otherElement !== element) {
+              const newChild = otherElement.querySelector(".checkmark");
+              if (newChild) {
+                otherElement.removeChild(newChild);
+              }
+              otherElement.classList.remove("selected");
+            }
+          });
+
+          // Check if the clicked element has a child with the class "new-child"
+          const newChild = this.querySelector(".checkmark");
+          if (newChild) {
+            // If a child with the class "new-child" is found, remove it
+            this.removeChild(newChild);
+          } else {
+            // If no child with the class "new-child" is found, create a new child element
+            const newChild = document.createElement("ion-icon");
+            newChild.name = "checkmark-circle";
+            newChild.classList.add("checkmark");
+            newChild.classList.add("fill");
+            this.appendChild(newChild);
+          }
+
+          // Toggle the "selected" class on the clicked element
+          this.classList.toggle("selected");
+        });
+      });
+      let redirectButton = document.querySelector("#redirect-button");
 
       redirectButton.addEventListener("click", function () {
         window.location.href = "progress.html";
       });
     </script>
   </body>
-  
+  <!-- script include header -->
+  <script>
+    fetch("./header.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("header").innerHTML = data;
+      });
+  </script>
+
+  <!-- script include footer -->
+  <script>
+    fetch("./footer.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("footer").innerHTML = data;
+      });
+  </script>
 </html>

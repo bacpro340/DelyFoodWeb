@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/progress.css" />
 
     <!-- UniIcon CDN Link  -->
@@ -18,48 +19,73 @@
     />
   </head>
   <body>
-    <div class="main">
-      <div class="head">
-        <p class="text head_1">Đặt hàng thành công</p>
-      </div>
+    <div class="app">
+      <header></header>
+      <div class="main">
+        <div class="head">
+          <p class="text head_1">Đặt hàng thành công</p>
+        </div>
 
-      <ul>
-        <li>
-          <i class="icon uil uil-clipboard-notes"></i>
-          <div class="progress one active">
-            <p>1</p>
-            <i class="uil uil-check"></i>
-          </div>
-          <p class="step1"></p>
-        </li>
-        <li>
-          <i class="icon uil uil-restaurant"></i>
-          <div class="progress two">
-            <p>2</p>
-            <i class="uil uil-check"></i>
-          </div>
-          <p class="step2"></p>
-        </li>
-        <li>
-          <i class="icon uil uil-exchange"></i>
-          <div class="progress three">
-            <p>3</p>
-            <i class="uil uil-check"></i>
-          </div>
-          <p class="step3"></p>
-        </li>
-        <li>
-          <i class="icon uil uil-map-marker"></i>
-          <div class="progress four">
-            <p>4</p>
-            <i class="uil uil-check"></i>
-          </div>
-          <p class="step4"></p>
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <i class="icon uil uil-clipboard-notes"></i>
+            <div class="progress one active">
+              <p>1</p>
+              <i class="uil uil-check"></i>
+            </div>
+            <p class="step1"></p>
+          </li>
+          <li>
+            <i class="icon uil uil-restaurant"></i>
+            <div class="progress two">
+              <p>2</p>
+              <i class="uil uil-check"></i>
+            </div>
+            <p class="step2"></p>
+          </li>
+          <li>
+            <i class="icon uil uil-exchange"></i>
+            <div class="progress three">
+              <p>3</p>
+              <i class="uil uil-check"></i>
+            </div>
+            <p class="step3"></p>
+          </li>
+          <li>
+            <i class="icon uil uil-map-marker"></i>
+            <div class="progress four">
+              <p>4</p>
+              <i class="uil uil-check"></i>
+            </div>
+            <p class="step4"></p>
+          </li>
+        </ul>
+      </div>
+      <footer></footer>
     </div>
 
     <script src="./js/progress.js"></script>
     <script></script>
   </body>
+  <!-- script include header -->
+  <script>
+    fetch("./header.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("header").innerHTML = data;
+      });
+  </script>
+
+  <!-- script include footer -->
+  <script>
+    fetch("./footer.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("footer").innerHTML = data;
+      });
+  </script>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Cart</title>
 
+    <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/cart.css" />
 
     <link
@@ -19,20 +20,22 @@
     - main container
   -->
 
-    <main class="container">
-      <!-- <h1 class="heading">
+    <div class="app">
+      <header></header>
+      <main class="container">
+        <!-- <h1 class="heading">
         <iconify-icon icon="ion:restaurant-outline"></iconify-icon> Food4u
       </h1> -->
 
-      <div class="item-flex">
-        <!--
+        <div class="item-flex">
+          <!--
        - checkout section
       -->
-        <section class="checkout">
-          <h2 class="section-heading">Thông tin giao hàng</h2>
+          <section class="checkout">
+            <h2 class="section-heading">Thông tin giao hàng</h2>
 
-          <div class="payment-form">
-            <!-- <div class="payment-method">
+            <div class="payment-form">
+              <!-- <div class="payment-method">
               <button class="method selected">
                 <ion-icon name="card"></ion-icon>
 
@@ -56,192 +59,196 @@
               </button>
             </div> -->
 
-            <form action="#">
-              <div class="cardholder-name">
-                <label for="cardholder-name" class="label-default">Quận</label>
-                <input
-                  type="text"
-                  name="cardholder-name"
-                  id="cardholder-name"
-                  class="input-default"
-                />
-              </div>
-
-              <div class="card-ward">
-                <label for="card-ward" class="label-default">Phường</label>
-                <input
-                  type="number"
-                  name="card-ward"
-                  id="card-ward"
-                  class="input-default"
-                />
-              </div>
-
-              <div class="input-flex">
-                <div class="address">
-                  <label for="address" class="label-default">Số nhà</label>
-
-                  <div class="input-flex">
-                    <input
-                      type="number"
-                      name="address"
-                      id="address"
-                      class="input-default"
-                    />
-                    /
-                    <input
-                      type="number"
-                      name="address"
-                      id="address"
-                      class="input-default"
-                    />
-                  </div>
-                </div>
-
-                <div class="street">
-                  <label for="street" class="label-default">Đường</label>
+              <form action="#">
+                <div class="cardholder-name">
+                  <label for="cardholder-name" class="label-default"
+                    >Quận</label
+                  >
                   <input
                     type="text"
-                    name="street"
-                    id="street"
+                    name="cardholder-name"
+                    id="cardholder-name"
                     class="input-default"
                   />
                 </div>
-              </div>
-            </form>
-          </div>
 
-          <button class="btn btn-primary" id="redirect-button">
-            <b>Tiến hành thanh toán</b> <span id="payAmount">110</span>k
-          </button>
-        </section>
+                <div class="card-ward">
+                  <label for="card-ward" class="label-default">Phường</label>
+                  <input
+                    type="number"
+                    name="card-ward"
+                    id="card-ward"
+                    class="input-default"
+                  />
+                </div>
 
-        <!--
+                <div class="input-flex">
+                  <div class="address">
+                    <label for="address" class="label-default">Số nhà</label>
+
+                    <div class="input-flex">
+                      <input
+                        type="number"
+                        name="address"
+                        id="address"
+                        class="input-default"
+                      />
+                      /
+                      <input
+                        type="number"
+                        name="address"
+                        id="address"
+                        class="input-default"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="street">
+                    <label for="street" class="label-default">Đường</label>
+                    <input
+                      type="text"
+                      name="street"
+                      id="street"
+                      class="input-default"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <button class="btn btn-primary" id="redirect-button">
+              <b>Tiến hành thanh toán</b> <span id="payAmount">110</span>k
+            </button>
+          </section>
+
+          <!--
         - cart section
       -->
-        <section class="cart">
-          <div class="cart-item-box">
-            <h2 class="section-heading">Thông tin đơn hàng</h2>
+          <section class="cart">
+            <div class="cart-item-box">
+              <h2 class="section-heading">Thông tin đơn hàng</h2>
 
-            <div class="product-card">
-              <div class="card">
-                <div class="img-box">
-                  <img
-                    src="./img/noodles.jpg"
-                    alt="Noodles"
-                    width="80px"
-                    height="55px"
-                    class="product-img"
-                  />
-                </div>
-
-                <div class="detail">
-                  <h4 class="product-name">Mì xào bò</h4>
-
-                  <div class="wrapper">
-                    <div class="product-qty">
-                      <button id="decrement">
-                        <ion-icon name="remove-outline"></ion-icon>
-                      </button>
-
-                      <span id="quantity">1</span>
-
-                      <button id="increment">
-                        <ion-icon name="add-outline"></ion-icon>
-                      </button>
-                    </div>
-
-                    <div class="price"><span id="price">50</span>k</div>
+              <div class="product-card">
+                <div class="card">
+                  <div class="img-box">
+                    <img
+                      src="./img/noodles.jpg"
+                      alt="Noodles"
+                      width="80px"
+                      height="55px"
+                      class="product-img"
+                    />
                   </div>
-                </div>
 
-                <button class="product-close-btn" id="delete-button-1">
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
+                  <div class="detail">
+                    <h4 class="product-name">Mì xào bò</h4>
 
-            <div class="product-card">
-              <div class="card">
-                <div class="img-box">
-                  <img
-                    src="./img/rice.jpg"
-                    alt="rice"
-                    width="80px"
-                    height="55px"
-                    class="product-img"
-                  />
-                </div>
+                    <div class="wrapper">
+                      <div class="product-qty">
+                        <button id="decrement">
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </button>
 
-                <div class="detail">
-                  <h4 class="product-name">Cơm gà xối mỡ</h4>
+                        <span id="quantity">1</span>
 
-                  <div class="wrapper">
-                    <div class="product-qty">
-                      <button id="decrement">
-                        <ion-icon name="remove-outline"></ion-icon>
-                      </button>
+                        <button id="increment">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
 
-                      <span id="quantity">1</span>
-
-                      <button id="increment">
-                        <ion-icon name="add-outline"></ion-icon>
-                      </button>
+                      <div class="price"><span id="price">50</span>k</div>
                     </div>
-
-                    <div class="price"><span id="price">35</span>k</div>
                   </div>
+
+                  <button class="product-close-btn" id="delete-button-1">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="card">
+                  <div class="img-box">
+                    <img
+                      src="./img/rice.jpg"
+                      alt="rice"
+                      width="80px"
+                      height="55px"
+                      class="product-img"
+                    />
+                  </div>
+
+                  <div class="detail">
+                    <h4 class="product-name">Cơm gà xối mỡ</h4>
+
+                    <div class="wrapper">
+                      <div class="product-qty">
+                        <button id="decrement">
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </button>
+
+                        <span id="quantity">1</span>
+
+                        <button id="increment">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
+
+                      <div class="price"><span id="price">35</span>k</div>
+                    </div>
+                  </div>
+
+                  <button class="product-close-btn" id="delete-button-2">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="discount-token">
+                <label for="discount-token" class="label-default"
+                  >Mã giảm giá</label
+                >
+
+                <div class="wrapper-flex">
+                  <input
+                    type="text"
+                    name="discount-token"
+                    id="discount-token"
+                    class="input-default"
+                  />
+
+                  <button class="btn btn-outline">Apply</button>
+                </div>
+              </div>
+
+              <div class="amount">
+                <div class="subtotal">
+                  <span>Thành tiền</span>
+                  <span> <span id="subtotal">85</span>k</span>
                 </div>
 
-                <button class="product-close-btn" id="delete-button-2">
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="wrapper">
-            <div class="discount-token">
-              <label for="discount-token" class="label-default"
-                >Mã giảm giá</label
-              >
-
-              <div class="wrapper-flex">
-                <input
-                  type="text"
-                  name="discount-token"
-                  id="discount-token"
-                  class="input-default"
-                />
-
-                <button class="btn btn-outline">Apply</button>
-              </div>
-            </div>
-
-            <div class="amount">
-              <div class="subtotal">
-                <span>Thành tiền</span>
-                <span> <span id="subtotal">85</span>k</span>
-              </div>
-
-              <!-- <div class="tax">
+                <!-- <div class="tax">
                 <span>Tax</span> <span> <span id="tax">10k</span></span>
               </div> -->
 
-              <div class="shipping">
-                <span>Phí ship</span>
-                <span> <span id="shipping">25</span>k</span>
-              </div>
+                <div class="shipping">
+                  <span>Phí ship</span>
+                  <span> <span id="shipping">25</span>k</span>
+                </div>
 
-              <div class="total">
-                <span>Tổng cộng</span>
-                <span> <span id="total">110</span>k</span>
+                <div class="total">
+                  <span>Tổng cộng</span>
+                  <span> <span id="total">110</span>k</span>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-    </main>
+          </section>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
 
     <!--
     - custom js link
@@ -268,4 +275,25 @@
       });
     </script>
   </body>
+  <!-- script include header -->
+  <script>
+    fetch("./header.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("header").innerHTML = data;
+      });
+  </script>
+
+  <!-- script include footer -->
+  <script>
+    fetch("./footer.html")
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        document.querySelector("footer").innerHTML = data;
+      });
+  </script>
 </html>
