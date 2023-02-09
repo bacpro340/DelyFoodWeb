@@ -82,7 +82,7 @@
               <div
                 id="basic-info"
                 class="info container-detail"
-                style="display: none"
+                style="display: flex"
               >
                 <div class="grid-col-2">
                   <div>
@@ -92,6 +92,7 @@
                         type="text"
                         placeholder="Nhập họ tên"
                         class="basic-info-fill"
+                        value="Nguyễn Văn A"
                       />
                     </div>
                   </div>
@@ -113,6 +114,7 @@
                       type="date"
                       placeholder="Nhập ngày sinh"
                       class="basic-info-fill"
+                      value="2000-09-29"
                     />
                   </div>
                 </div>
@@ -124,6 +126,7 @@
                         type="text"
                         placeholder="Nhập số điện thoại"
                         class="basic-info-fill"
+                        value="011111111"
                       />
                     </div>
                   </div>
@@ -134,30 +137,356 @@
                       type="text"
                       placeholder="Nhập địa chỉ"
                       class="basic-info-fill grid-span-row-2"
+                      value="Thủ Đức, TP HCM"
                     />
                   </div>
 
                   <div>
-                    <button class="btn-save">Lưu</button>
+                    <button class="btn-save fill-primary-color border-16">
+                      Lưu
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <div id="address" class="info" style="display: none">Dia chi</div>
-              <div id="payment" class="info" style="display: none">
-                Thong tin thong tin thanh toan
+              <div
+                id="address"
+                class="info address-container form-detail"
+                style="display: none"
+              >
+                <button
+                  class="btn-save btn-add-address border-16 fill-primary-color"
+                >
+                  + Thêm địa chỉ
+                </button>
+                <div class="item-address">
+                  <div class="name-and-phone">Nguyễn Văn A - 0123456789</div>
+                  <div class="container-address">
+                    <div class="name-address">Thủ Đức, TP HCM</div>
+                    <i class="icon-edit fa-solid fa-pen-to-square"></i>
+                    <i class="icon-delete fa-solid fa-trash"></i>
+                  </div>
+                </div>
+                <div class="item-address">
+                  <div class="name-and-phone">Nguyễn Văn A - 0123456789</div>
+                  <div class="container-address">
+                    <div class="name-address">Thủ Đức, TP HCM</div>
+                    <i class="icon-edit fa-solid fa-pen-to-square"></i>
+                    <i class="icon-delete fa-solid fa-trash"></i>
+                  </div>
+                </div>
+
+                <div class="list-number">
+                  <button class="btn fill-primary-color">1</button>
+                  <button class="btn">2</button>
+                  <button class="btn">...</button>
+                  <button class="btn">9</button>
+                  <button class="btn">10</button>
+                </div>
+                <div class="previous-next">
+                  <button class="btn">Previous</button>
+                  <button class="btn">Next</button>
+                </div>
+                <button
+                  class="fill-primary-color border-16 btn-save-address btn-save"
+                >
+                  Lưu
+                </button>
               </div>
-              <div id="change-pass" class="info" style="display: none">
-                Doi mat khau
+
+              <div
+                id="payment"
+                class="info form-detail payment-container"
+                style="display: none"
+              >
+                <button
+                  class="btn-save btn-add-address border-16 fill-primary-color"
+                >
+                  + Thêm tài khoản ngân hàng
+                </button>
+                <div class="item-address">
+                  <div class="name-and-phone">Số dư ví</div>
+                  <div class="container-payment">
+                    <div class="name-address">100.000 VND</div>
+                  </div>
+                </div>
+                <div class="item-address">
+                  <div class="title-payment primary-title">
+                    Tài khoản ngân hàng
+                  </div>
+                  <div class="container-address">
+                    <div class="name-address detail__payment">
+                      <div>Ngân hàng BIDV</div>
+                      <div>0****************</div>
+                      <div>Nguyễn Văn A</div>
+                    </div>
+                    <i class="icon-edit fa-solid fa-pen-to-square"></i>
+                    <i class="icon-delete fa-solid fa-trash"></i>
+                  </div>
+                </div>
+
+                <div class="list-number">
+                  <button class="btn fill-primary-color">1</button>
+                  <button class="btn">2</button>
+                  <button class="btn">...</button>
+                  <button class="btn">9</button>
+                  <button class="btn">10</button>
+                </div>
+                <div class="previous-next">
+                  <button class="btn">Previous</button>
+                  <button class="btn">Next</button>
+                </div>
+                <button
+                  class="fill-primary-color border-16 btn-save-address btn-save"
+                >
+                  Lưu
+                </button>
               </div>
-              <div id="history" class="info" style="display: none">
-                Lich su giao dich
+              <div
+                id="change-pass"
+                class="info form-detail change-pass-container"
+                style="display: none"
+              >
+                <div>
+                  <div class="basic-info-title">Mật khẩu cũ</div>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Nhập mật khẩu cũ"
+                      class="basic-info-fill"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="basic-info-title">Mật khẩu mới</div>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Nhập mật khẩu mới"
+                      class="basic-info-fill"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="basic-info-title">Nhập lại mật khẩu mới</div>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Nhập mật khẩu mới"
+                      class="basic-info-fill"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="fill-primary-color border-16 btn-save-address btn-save"
+                >
+                  Lưu
+                </button>
               </div>
-              <div id="favourite" class="info" style="display: none">
-                Yeu thich
+              <div
+                id="history"
+                class="info history-container form-detail"
+                style="display: none"
+              >
+                <div class="filter-history">
+                  <button class="btn fill-primary-color">Tất cả</button>
+                  <button class="btn">Vận chuyển</button>
+                  <button class="btn">Đang giao</button>
+                  <button class="btn">Hoàn thành</button>
+                  <button class="btn">Đã huỷ</button>
+                </div>
+
+                <div class="item-history">
+                  <img
+                    src="./assets/image/food.jpg"
+                    class="img-item-history"
+                    alt=""
+                  />
+                  <div class="container-history-detail">
+                    <div class="history-title">Hambuger</div>
+                    <div class="history-sub">Thủ Đức, TP HCM</div>
+                    <div class="history-text">Restaurant</div>
+                    <div class="history-text">Loại: Combo Bánh + Khoai</div>
+                    <div class="history-text">Số lượng: 3</div>
+                  </div>
+                  <div class="container-history-price">
+                    <div class="food-price">300.000d</div>
+                    <button class="fill-primary-color border-16 btn-save">
+                      Mua lại
+                    </button>
+                  </div>
+                </div>
+                <div class="item-history">
+                  <img
+                    src="./assets/image/food.jpg"
+                    class="img-item-history"
+                    alt=""
+                  />
+                  <div class="container-history-detail">
+                    <div class="history-title">Hambuger</div>
+                    <div class="history-sub">Thủ Đức, TP HCM</div>
+                    <div class="history-text">Restaurant</div>
+                    <div class="history-text">Loại: Combo Bánh + Khoai</div>
+                    <div class="history-text">Số lượng: 3</div>
+                  </div>
+                  <div class="container-history-price">
+                    <div class="food-price">300.000d</div>
+                    <button class="fill-primary-color border-16 btn-save">
+                      Mua lại
+                    </button>
+                  </div>
+                </div>
+
+                <div class="list-number">
+                  <button class="btn fill-primary-color">1</button>
+                  <button class="btn">2</button>
+                  <button class="btn">...</button>
+                  <button class="btn">9</button>
+                  <button class="btn">10</button>
+                </div>
+                <div class="previous-next">
+                  <button class="btn">Previous</button>
+                  <button class="btn">Next</button>
+                </div>
               </div>
-              <div id="notification" class="info" style="display: none">
-                Thong bao khuyen mai
+              <div
+                id="favourite"
+                class="info history-container form-detail"
+                style="display: none"
+              >
+                <div class="item-history">
+                  <img
+                    src="./assets/image/food.jpg"
+                    class="img-item-history"
+                    alt=""
+                  />
+                  <div class="container-history-detail">
+                    <div class="history-title">Hambuger</div>
+                    <div class="history-sub">Thủ Đức, TP HCM</div>
+                    <div class="history-text">Restaurant</div>
+                    <div class="history-text">Loại: Combo Bánh + Khoai</div>
+                  </div>
+                  <div class="container-history-price">
+                    <div class="food-price">300.000d</div>
+                  </div>
+                </div>
+                <div class="item-history">
+                  <img
+                    src="./assets/image/food.jpg"
+                    class="img-item-history"
+                    alt=""
+                  />
+                  <div class="container-history-detail">
+                    <div class="history-title">Hambuger</div>
+                    <div class="history-sub">Thủ Đức, TP HCM</div>
+                    <div class="history-text">Restaurant</div>
+                    <div class="history-text">Loại: Combo Bánh + Khoai</div>
+                  </div>
+                  <div class="container-history-price">
+                    <div class="food-price">300.000d</div>
+                  </div>
+                </div>
+
+                <div class="list-number">
+                  <button class="btn fill-primary-color">1</button>
+                  <button class="btn">2</button>
+                  <button class="btn">...</button>
+                  <button class="btn">9</button>
+                  <button class="btn">10</button>
+                </div>
+                <div class="previous-next">
+                  <button class="btn">Previous</button>
+                  <button class="btn">Next</button>
+                </div>
+              </div>
+              <div
+                id="notification"
+                class="info history-container form-detail"
+                style="display: none"
+              >
+                <div class="item-history">
+                  <img
+                    src="./assets/image/food.jpg"
+                    class="img-item-history"
+                    alt=""
+                  />
+                  <div class="container-history-detail">
+                    <div class="history-title">Hamburger sale 70% to day</div>
+
+                    <div class="history-text">
+                      Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+                      Pellentesque sed odio pretium, lacinia velit ac, posuere
+                      nisl. Maecenas et purus sed nisl consectetur ullamcorper.
+                      Mauris eu cursus est.
+                    </div>
+                  </div>
+                  <div class="container-history-price">
+                    <div class="number-des">
+                      <div class="number-text">̶1̶̶0̶̶0̶̶.̶̶0̶̶0̶̶0̶̶d̶</div>
+                    </div>
+                    <div class="food-price">30.000d</div>
+                  </div>
+                </div>
+                <div class="item-history">
+                  <img
+                    src="./assets/image/food.jpg"
+                    class="img-item-history"
+                    alt=""
+                  />
+                  <div class="container-history-detail">
+                    <div class="history-title">Hamburger sale 70% to day</div>
+
+                    <div class="history-text">
+                      Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+                      Pellentesque sed odio pretium, lacinia velit ac, posuere
+                      nisl. Maecenas et purus sed nisl consectetur ullamcorper.
+                      Mauris eu cursus est.
+                    </div>
+                  </div>
+                  <div class="container-history-price">
+                    <div class="number-des">
+                      <div class="number-text">̶1̶̶0̶̶0̶̶.̶̶0̶̶0̶̶0̶̶d̶</div>
+                    </div>
+                    <div class="food-price">30.000d</div>
+                  </div>
+                </div>
+                <div class="item-history">
+                  <img
+                    src="./assets/image/food.jpg"
+                    class="img-item-history"
+                    alt=""
+                  />
+                  <div class="container-history-detail">
+                    <div class="history-title">Hamburger sale 70% to day</div>
+
+                    <div class="history-text">
+                      Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+                      Pellentesque sed odio pretium, lacinia velit ac, posuere
+                      nisl. Maecenas et purus sed nisl consectetur ullamcorper.
+                      Mauris eu cursus est.
+                    </div>
+                  </div>
+                  <div class="container-history-price">
+                    <div class="number-des">
+                      <div class="number-text">̶1̶̶0̶̶0̶̶.̶̶0̶̶0̶̶0̶̶d̶</div>
+                    </div>
+                    <div class="food-price">30.000d</div>
+                  </div>
+                </div>
+
+                <div class="list-number">
+                  <button class="btn fill-primary-color">1</button>
+                  <button class="btn">2</button>
+                  <button class="btn">...</button>
+                  <button class="btn">9</button>
+                  <button class="btn">10</button>
+                </div>
+                <div class="previous-next">
+                  <button class="btn">Previous</button>
+                  <button class="btn">Next</button>
+                </div>
               </div>
             </div>
           </div>

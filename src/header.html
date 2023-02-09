@@ -1,22 +1,102 @@
 <link rel="stylesheet" href="./css/header.css" />
 <div class="header">
-  <div class="logo">
-    <img src="./assets/image/logo.png" alt="" class="img-logo" />
-    <div class="name-logo">DelyFood</div>
-  </div>
+  <div class="menu-nav">
+    <div class="logo">
+      <img src="./assets/image/logo.png" alt="" class="img-logo" />
+      <div class="name-logo">DelyFood</div>
+    </div>
 
-  <div class="top-navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="explore.html">Explore</a></li>
-      <li><a href="restaurant.html">Restaurant</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="top-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </div>
+  <div class="menu-search">
+    <input type="text" placeholder="Tìm kiếm" class="form-search" />
+    <div class="right">
+      <a href="./search_detail.html">
+        <i class="btn btn__search fa-solid fa-magnifying-glass"></i>
+      </a>
+      <a href="./cart.html">
+        <i class="btn btn__cart fa-solid fa-cart-shopping"></i
+      ></a>
 
-  <div class="right">
-    <i class="btn btn__search fa-solid fa-magnifying-glass"></i>
-    <i class="btn btn__cart fa-solid fa-cart-shopping"></i>
-    <a href="./login.html"><i class="btn btn__info fa-solid fa-user"></i></a>
+      <li class="header__navbar-notify">
+        <i class="btn btn__notification fa-sharp fa-solid fa-bell"></i>
+        <ul class="header__navbar-notify-menu">
+          <li class="header__navbar-notify-menu-top">
+            <div class="notify-title">Thông báo đã nhận</div>
+          </li>
+          <li class="header__navbar-notify-item">
+            <img
+              src="./assets/image/voucher-img.png"
+              alt=""
+              class="img-notify"
+            />
+            <div class="content-notify">
+              <div class="content-title">Tiết kiệm ngay 50.000d</div>
+              <div class="content-detail">
+                Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+              </div>
+            </div>
+          </li>
+          <li class="header__navbar-notify-item">
+            <img
+              src="./assets/image/voucher-img.png"
+              alt=""
+              class="img-notify"
+            />
+            <div class="content-notify">
+              <div class="content-title">Tiết kiệm ngay 50.000d</div>
+              <div class="content-detail">
+                Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+              </div>
+            </div>
+          </li>
+          <li class="header__navbar-notify-item">
+            <img
+              src="./assets/image/voucher-img.png"
+              alt=""
+              class="img-notify"
+            />
+            <div class="content-notify">
+              <div class="content-title">Tiết kiệm ngay 50.000d</div>
+              <div class="content-detail">
+                Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+              </div>
+            </div>
+          </li>
+          <li class="header__navbar-notify-bottom">
+            <div class="notify-bot">
+              <a href="./basic_info_screen.html">Xem tất cả</a>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="header__navbar-user">
+        <i class="btn btn__info fa-solid fa-user"></i>
+        <ul class="header__navbar-user-menu">
+          <li class="header__navbar-user-item">
+            <a href="./basic_info_screen.html">Tài khoản của tôi</a>
+          </li>
+          <li class="header__navbar-user-item">
+            <a href="./login.html">Đăng xuất</a>
+          </li>
+        </ul>
+      </li>
+      <div class="sign-out">
+        <a href="./basic_info_screen.html" class="btn-sign basic-info"
+          >Tài khoản</a
+        >
+        <a href="./login.html" class="btn-sign log-out">Đăng xuất</a>
+      </div>
+
+      <div class="notify"></div>
+    </div>
   </div>
 </div>

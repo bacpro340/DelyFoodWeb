@@ -32,6 +32,11 @@ input {
   margin: 15px -10px;
 }
 
+button a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 .form-login {
   overflow: auto;
   padding: 40px 30px 30px 30px;

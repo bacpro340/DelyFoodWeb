@@ -5,11 +5,12 @@
 .introduce {
   width: 100%;
   display: inline-flex;
+  padding: 40px 60px;
 }
 
 .image-intro {
-  width: 500px;
-  margin-left: 100px;
+  width: 100%;
+  padding: 10px 40px;
   text-align: center;
 }
 
@@ -55,6 +56,7 @@
 .benefit {
   width: 100%;
   text-align: center;
+  padding: 40px 60px;
 }
 
 .benefit-title {
@@ -174,7 +176,7 @@
 }
 
 .img-rect {
-  height: 300px;
+  width: 60%;
 }
 
 .rect-title {
@@ -199,4 +201,9 @@
 
 .food-and-restaurant {
   overflow: auto;
+  padding: 40px 60px;
+}
+
+.review {
+  padding: 40px 60px;
 }

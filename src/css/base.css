@@ -4,13 +4,14 @@
   --nobel-color: #9d9d9d;
   --black-color: #000;
   --white-color: #fff;
+  --label-color: #f1f1f1;
 }
 
 html {
   /* 100% = 16px */
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 p {
@@ -62,6 +63,14 @@ p {
 
 .primary-title {
   color: var(--primary-color);
+}
+
+.fill-primary-color {
+  background-color: var(--primary-color);
+}
+
+.fill-nobel-color {
+  background-color: var(--nobel-color);
 }
 
 .center {
