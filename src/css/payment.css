@@ -1,14 +1,20 @@
 html {
-  font-family: "Source Sans 3", sans-serif;
 }
+
 * {
   margin: 10px auto;
+}
+.menu-nav {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .wrapper {
   height: 800px;
   width: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 5px;
+  font-family: "Source Sans 3", sans-serif !important;
+  font-size: 15px !important;
 }
 .payment-detail {
   width: 100%;
@@ -37,7 +43,7 @@ html {
   width: 85%;
   height: 40%;
 }
-.header {
+.header-in {
   height: 10%;
   padding: 2px 0;
   font-size: 20px;

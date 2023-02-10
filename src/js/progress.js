@@ -49,11 +49,11 @@ four.onclick = function () {
   stepFour.innerHTML = time();
   title.innerHTML = "Giao hàng thành công";
 };
-
 function checkTime(i) {
-  if (i < 0) {
+  if (i < 10) {
     i = "0" + i;
   }
+  console.log(i);
   return i;
 }
 function time() {

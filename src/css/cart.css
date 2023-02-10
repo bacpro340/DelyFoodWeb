@@ -21,9 +21,9 @@
   --radius: 5px;
 }
 
-*,
-*::before,
-*::after {
+.container,
+.container::before,
+.container::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -88,7 +88,7 @@ input::-webkit-outer-spin-button {
 .container {
   max-width: 1440px;
   min-height: 100vh;
-  margin: auto;
+  /* margin: auto; */
   display: flex;
   flex-direction: column;
 }
@@ -116,7 +116,7 @@ input::-webkit-outer-spin-button {
 .checkout {
   width: 70%;
   padding: 40px var(--px);
-  background: var(--white);
+  /* background: var(--white); */
   border-right: 1px solid var(--gainsboro);
 }
 
@@ -216,29 +216,29 @@ input::-webkit-outer-spin-button {
 }
 
 .btn {
-  border-radius: var(--radius);
+  border-radius: var(--radius) !important;
 }
 
 .btn:active {
-  transform: scale(0.99);
+  transform: scale(0.99) !important;
 }
 
 .btn:focus {
-  color: var(--white);
-  background: var(--azure);
-  outline: 2px solid var(--azure);
-  outline-offset: 2px;
+  color: var(--white) !important;
+  background: var(--azure) !important;
+  outline: 2px solid var(--azure) !important;
+  outline-offset: 2px !important;
 }
 
 .btn-primary {
-  background: #f44336;
-  font-weight: var(--fw-5);
-  color: var(--white);
-  padding: 13px 45px;
+  background: #f44336 !important;
+  font-weight: var(--fw-5) !important;
+  color: var(--white) !important;
+  padding: 13px 45px !important;
 }
 
 .btn-primary b {
-  margin-right: 10px;
+  margin-right: 10px !important;
 }
 
 .cart {
@@ -297,7 +297,7 @@ input::-webkit-outer-spin-button {
 
 .product-qty button:active,
 .product-close-btn:active ion-icon {
-  transform: scale(0.95);
+  transform: scale(0.95) !important;
 }
 
 .product-qty button ion-icon {
@@ -339,14 +339,14 @@ input::-webkit-outer-spin-button {
 }
 
 .btn-outline {
-  padding: 10px 25px;
-  border: 1px solid #f44336;
-  color: #f44336;
+  padding: 10px 25px !important;
+  border: 1px solid #f44336 !important;
+  color: #f44336 !important;
 }
 
 .btn-outline:hover {
-  background: #f44336;
-  color: var(--white);
+  background: #f44336 !important;
+  color: var(--white) !important;
 }
 
 .amount {
