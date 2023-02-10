@@ -34,6 +34,16 @@
     }
     button {
       font-family: "Jost", sans-serif;
+      font-family: "Jost", sans-serif;
+      width: 150px;
+      height: 35px;
+      background-color: rgb(124, 113, 111);
+      color: #ffffff;
+      border: 0;
+      border-radius: 5px;
+    }
+    button:active {
+      transform: scale(0.95);
     }
     .container {
       display: flex;
@@ -41,7 +51,8 @@
     }
 
     .sidebar {
-      min-width: 150px;
+      min-width: 200px;
+      padding: 20px;
       
     }
 
@@ -59,7 +70,7 @@
     .sidebar-subitems {
       padding: 10px;
       transition: max-height 0.3s ease-in-out;
-      max-height: 100px;
+      max-height: 50px;
       overflow: hidden;
     }
 
@@ -85,10 +96,11 @@
     /* thong tin mon an */
     .grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(5, 550px);
+      grid-template-columns: repeat(3, 0.5fr);
+      grid-template-rows: repeat(5, 500px);
       grid-gap: 15px;
-      margin-left: 90px;
+      margin-left: 10px;
+      margin-right: 0;
     }
 
     .grid-item {
@@ -215,7 +227,45 @@
           </div>
           <!-- Repeat the above div for the rest of the grid items -->
         </div>
+        
       </div>
+      <div
+          id="page-number"
+          style="display: flex; justify-content: center; width: 100%"
+        >
+          <button id="previous" style="width: 60px; margin: 10px">
+            Previous
+          </button>
+          <button
+            id="page-ShowNumber"
+            style="
+              width: 35px;
+              margin: 10px;
+              background-color: rgb(246, 98, 62);
+            "
+          >
+            1
+          </button>
+          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+            2
+          </button>
+          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+            3
+          </button>
+          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+            ...
+          </button>
+          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+            9
+          </button>
+          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+            10
+          </button>
+          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+            11
+          </button>
+          <button id="next" style="width: 60px; margin: 10px">Next</button>
+        </div>
       <footer></footer>
     </div>
   </body>
@@ -253,7 +303,7 @@
     const gridItem = document.querySelector(".grid-item");
     const grid = document.querySelector(".grid");
 
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 14; i++) {
       const newGridItem = gridItem.cloneNode(true);
       grid.appendChild(newGridItem);
     }

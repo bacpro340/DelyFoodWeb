@@ -1,0 +1,28 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 567px) {
+  .login-form-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-form {
+    display: none;
+  }
+
+  .grid-col-2 {
+    width: 90%;
+  }
+
+  .form-login {
+    width: 100%;
+  }
+
+  .form-email,
+  .form-password {
+    width: 100%;
+  }
+}
