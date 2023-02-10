@@ -445,3 +445,7 @@ input::-webkit-outer-spin-button {
     flex-direction: row;
   }
 }
+/* .app {
+  display: flex;
+  flex-direction: row;
+} */
