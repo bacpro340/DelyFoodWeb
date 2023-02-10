@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 567px) {
+  .top-navigation,
+  .header__navbar-user,
+  .sign-out,
+  .header__navbar-notify,
+  .btn__cart {
+    display: none;
+  }
+
+  .menu-wrap {
+    display: block;
+  }
+}

@@ -1,0 +1,87 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 567px) {
+  .grid-col-2_20 {
+    width: 100%;
+  }
+  .grid-col-2_80 {
+    width: 100%;
+  }
+  .container-detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .basic-info-fill {
+    width: 100%;
+  }
+  .grid-col-2 {
+    width: 100%;
+  }
+  .btn-add-address {
+    font-size: 12px;
+  }
+
+  .menu-button {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .menu-button .tablink {
+    font-size: 16px;
+    width: fit-content;
+  }
+
+  .address-container {
+  }
+
+  .list-number,
+  .previous-next {
+    width: 100%;
+  }
+
+  .btn-save {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .change-pass-container .basic-info-fill {
+    width: 100%;
+  }
+
+  .history-container {
+    width: 90%;
+  }
+
+  .item-history {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-item-history {
+    width: 100%;
+  }
+
+  .filter-history {
+    display: flex;
+    flex-direction: row;
+  }
+  .filter-history .btn {
+    font-size: 10px;
+  }
+
+  .tablink {
+  }
+  .menu-button {
+    display: flex;
+    flex-direction: row;
+    font-size: 8px;
+    width: 100%;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+  }
+}

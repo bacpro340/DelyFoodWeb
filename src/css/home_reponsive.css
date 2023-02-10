@@ -1,0 +1,26 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 567px) {
+  .introduce-title-line {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+  }
+  .introduce {
+    width: 100%;
+  }
+  .image-intro {
+    display: none;
+  }
+  .grid-col-2 {
+    width: 100%;
+  }
+  .grid-col-3 {
+    width: 100%;
+  }
+}
