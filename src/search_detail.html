@@ -53,7 +53,6 @@
     .sidebar {
       min-width: 200px;
       padding: 20px;
-      
     }
 
     .sidebar-button {
@@ -96,7 +95,7 @@
     /* thong tin mon an */
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 0.5fr);
+      grid-template-columns: repeat(4, 0.5fr);
       grid-template-rows: repeat(5, 500px);
       grid-gap: 15px;
       margin-left: 10px;
@@ -201,7 +200,14 @@
               <p style="text-align: start; font-size: 32px; margin: 0">
                 Hamberger
               </p>
-              <p style="text-align: start; font-size: 16px; margin: 0; padding-top: 10px;">
+              <p
+                style="
+                  text-align: start;
+                  font-size: 16px;
+                  margin: 0;
+                  padding-top: 10px;
+                "
+              >
                 Thủ Đức, TP.HCM
               </p>
             </div>
@@ -227,45 +233,40 @@
           </div>
           <!-- Repeat the above div for the rest of the grid items -->
         </div>
-        
       </div>
       <div
-          id="page-number"
-          style="display: flex; justify-content: center; width: 100%"
+        id="page-number"
+        style="display: flex; justify-content: center; width: 100%"
+      >
+        <button id="previous" style="width: 60px; margin: 10px">
+          Previous
+        </button>
+        <button
+          id="page-ShowNumber"
+          style="width: 35px; margin: 10px; background-color: rgb(246, 98, 62)"
         >
-          <button id="previous" style="width: 60px; margin: 10px">
-            Previous
-          </button>
-          <button
-            id="page-ShowNumber"
-            style="
-              width: 35px;
-              margin: 10px;
-              background-color: rgb(246, 98, 62);
-            "
-          >
-            1
-          </button>
-          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
-            2
-          </button>
-          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
-            3
-          </button>
-          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
-            ...
-          </button>
-          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
-            9
-          </button>
-          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
-            10
-          </button>
-          <button id="page-ShowNumber" style="width: 35px; margin: 10px">
-            11
-          </button>
-          <button id="next" style="width: 60px; margin: 10px">Next</button>
-        </div>
+          1
+        </button>
+        <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+          2
+        </button>
+        <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+          3
+        </button>
+        <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+          ...
+        </button>
+        <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+          9
+        </button>
+        <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+          10
+        </button>
+        <button id="page-ShowNumber" style="width: 35px; margin: 10px">
+          11
+        </button>
+        <button id="next" style="width: 60px; margin: 10px">Next</button>
+      </div>
       <footer></footer>
     </div>
   </body>
@@ -303,7 +304,7 @@
     const gridItem = document.querySelector(".grid-item");
     const grid = document.querySelector(".grid");
 
-    for (let i = 0; i < 14; i++) {
+    for (let i = 0; i < 19; i++) {
       const newGridItem = gridItem.cloneNode(true);
       grid.appendChild(newGridItem);
     }
